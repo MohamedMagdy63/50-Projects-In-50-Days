@@ -1,0 +1,40 @@
+body{
+    background-image:linear-gradient(90deg, #7d5fff, #7158e2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    position: relative;
+}
+.container #searchIcon{
+    color: rgb(16, 17, 17);
+    font-size: 25px;
+    background-color: rgb(249, 249, 249);
+    padding: 12px;
+    cursor: pointer;
+    margin: 0;
+    transition: width 1s ease-out;
+}
+.container .searchInput{
+    background-color: #fff;
+    border: 0;
+    font-size: 18px;
+    padding: 0;
+    height: 0;
+    width: 0;
+    transition: width 1s ease-in;
+    outline: none;
+    cursor: text;
+}
+.container .searchInput.active{
+   width:200px;
+   height: 50px;
+}
+.container.containerActive{
+    width: 255px;
+    background-color: #fff;
+    transition: width 1s ease-out;
+}
