@@ -15,3 +15,5 @@ async function getJoke(){
     const data =await response.json()
     joke.innerHTML = data.joke
 }
+const plusSt = 5 + '5'
+console.log(plusSt)
