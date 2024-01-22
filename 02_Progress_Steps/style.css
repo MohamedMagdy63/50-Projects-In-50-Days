@@ -1,9 +1,9 @@
 :root {
-    --line-border-fill: #3498db;
-    --line-border-empty: #e1d9d9;
+    --line-border-fill: #537188;
+    --line-border-empty: #E1D4BB;
 }
 body{
-    background-color:white;
+    background-image: linear-gradient(to right, #eeeeee, #cbccd4, #a5acba, #7e8da1, #537188);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,7 +20,7 @@ body{
     position: relative;
     margin-bottom: 30px;
     max-width: 100%;
-    width: 450px;
+    width: 500px;
 }
 .container .progressContainer::before{
     content: '';
@@ -30,7 +30,7 @@ body{
     left: 0;
     z-index: -1;
     transform: translateY(-50%);
-    height: 4px;
+    height: 8px;
     width: 100%;
 }
 .container .progressContainer .progress {
@@ -39,7 +39,7 @@ body{
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    height: 4px;
+    height: 5px;
     width: 0%;
     z-index: -1;
     transition: 0.4s ease;
@@ -49,22 +49,23 @@ body{
     display: flex;
     border: 3px solid gainsboro;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     align-items: center;
     justify-content: center;
 }
 .container .progressContainer .active{
-    border-color: lightskyblue;
+    border-color: #CBB279;
 }
 .container .btns .btn{
     width: 90px;
     height: 5vh;
+    padding: 10px;
     border: none;
     overflow: hidden;
     cursor: pointer;
-    background-color: rgb(11, 159, 251);
-    color: white;
+    background-color: #E1D4BB;
+    color: #537188;
     margin: 5px;
     border-radius: 5px;
 }
